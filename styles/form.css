@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root{
+ 
+    --main :#86c232;
+    --secondary   : #222629;
+    --grey: #474b4f;
+    --primary-dark : #61892f;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"oxygen" , sans-serif ;
+}
+body{
+    min-height: 100vh;
+}
+.menu a{
+    text-decoration: none;
+}
+input::placeholder {
+    color : #999;
+}
+main{
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    margin: 25px auto;
+
+}
+main .heading{
+    color: var(--main);
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 40px 0 10px;
+}
+main small{
+    color: var(--secondary);
+    color: grey;
+    margin: 15px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+}
+main form{
+    padding: 25px;
+    margin: 20px auto;
+    /* box-shadow: 0 0 25px grey; */
+}
+main form  section{
+    border: 1px solid var(--main);
+    padding: 20px 20px 0;
+    /* border: none; */
+    border-radius: 10px;
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    transition: .4s;
+}
+main .scroll-down{
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    position: relative;
+    font-weight: 700 !important;
+    color: #5bc0de;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+.scroll-down:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(90deg , #5bc0de,#5bc0de  ,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) ,#5bc0de, #5bc0de);
+    left: 0;
+    z-index: -1;
+    top: 50%;
+}
+main form .sub-heading{
+    text-align: center;
+    margin: 15px auto 40px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 200px;
+    padding: 8px 10px;
+    background: var(--secondary);
+    color:var(--main);
+    cursor: pointer;
+    font-size: 1.2rem !important;
+}
+main form .label{
+    color:var(--main);
+    margin: 10px 15% 5px;
+    text-align: left;
+    font-size: 1rem;
+}
+main form input , main form textarea , main form select{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px 20px 10px;
+    width: 70%;
+    resize: none;
+    font-weight: 700;
+    color: #666;
+    font-size: 1rem;
+    background:none;
+}
+
+main .education div{
+    border: .5px solid #888;
+    padding: 10px 0 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+main .addmore {
+    font-size: .8rem;
+    padding: 8px 10px;
+
+    background: #0275d8;
+    color: white;
+    width: 100px;
+    margin: 15px auto 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.remove:hover , .addmore:hover{
+    opacity: .8;
+}
+main .remove {
+    font-size: .8rem;
+    padding: 8px 10px;
+    background: #d9534f;
+    color: white;
+    width: 100px;
+    margin: 15px auto 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    
+}
+main form .submit{
+    display: block;
+    font-weight: 700;
+    width: 150px;
+    border-radius: 5px;
+    margin: 25px auto ;
+  
+}
+main form .submit:hover{
+    opacity: .9;
+}
+
+
+/* designing progress  */
+
+.progress-bar  {
+    width: 140%;
+    margin: 0 -20%;
+    background: none !important;
+    
+}
+.progress-bar ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+
+}
+.progress-bar  li {
+    
+    margin: 10px 5px;
+    width: calc(100%/4);
+    text-align: center !important;
+    background: #ddd;
+    padding: 8px 0;
+    font-weight: 600;
+    color:#888;
+}
+.progress-bar ul li.current{
+    color: var(--main);
+    background-color: var(--secondary);
+}
+
+.msg{
+    width: 90%;
+    margin: 20px auto;
+    color: var(--main);
+    background: var(--secondary);
+    padding: 8px 20px ;
+}
+
+
+/* styling modal on form  */
+
+.modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+}
+.modal--body{
+    width: 450px;
+    
+    padding: 40px;
+    background: #fff;
+    border-top: 10px solid var(--main);
+    
+}
+.modal--body__text{
+    color: var(--secondary);
+}
+
+.modal--closed{
+    display: none;
+}
+.modal--open{
+    display: grid;
+}
+
+.check-box{
+    margin: 10px;
+    display:flex;
+   outline:none;
+    border:none;
+    font-weight: bold;
+display: block;
+}
+.check-box input{
+    margin   :10px 10px 0 50px;
+    width:20px;
+   
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
